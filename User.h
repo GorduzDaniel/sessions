@@ -1,7 +1,6 @@
 #pragma once
-#include <stdio.h>
+
 #include <iostream>
-#include <string>
 
 using namespace std;
 
@@ -9,32 +8,16 @@ class User
 {
 public:
 	User();
-	User(string, string, string);
+	User(int);
 	~User();
-	string signature();
+	int signature();
+
+	int getId();
+	void setId(int id);
 private:
-	string id_utilizator;
-	string firstName;
-	string lastName;
-};
-
-//Clasa Profile
-class Profile {
-public:
-	Profile();
-	~Profile();
+	int id_utilizator;
 
 };
 
-//Clasa Sesion
-class Sesion {
-public:
-	Sesion();
-	~Sesion();
-private:
-	int nr_click_stanga;
-	int nr_click_dreapta;
-	int timp_intre_taste;
-	int timp_tasta;
-};
+
 
